@@ -47,4 +47,31 @@ Enemy Backups
         Kylo Ren
         Captain Phasma
         
-        
+Planets
+    Tatooine
+    Jakku
+    Naboo
+
+GAMEPLAY
+You can fly in a spaceship across the galaxy to any of these planets (very much like Misty Planets did), and land on them. 
+You can then play as an iconic character to complete missions on these planets with iconic droids at your side, BB-8, C3PO, and R2-D2.
+And the end of each of these missions you'll have to dual a Sith Lord, or something of the like.
+
+So in the start of the game, you'll play as Luke Skywalker with R2-D2, you can then defend Hoth, defeat Jabba on Tatooine, and then 
+face Darth Vader and the Emperor. You can also freely explore Tatooine and do other missions to earn coins. 
+Once you finish his era, you can move on to Jakku with Rey and BB-8 or to Tatooine (again) with Anakin and C-3PO.
+Remember, your character may change depending on what task you have to complete. 
+
+If you're freely exploring, you can switch between the characters and do tasks assigned by the locals in your area.
+Coins can be used to by better equipment or upgrade your ship to help you do these. If you complete these tasks, you earn
+help tokens. These help tokens can be used to summon help in battle if the character you helped is an "ATTACKER" or
+can heal your character if the character you helped is a "HEALER".
+
+In space, you can get stuck in battles with TIE fighters, the Death Star, StarKiller Base, and other evil ships. 
+In these battles, you can fire lasers from your ship, use your hyperdrive engine to fly to a random point on the screen,
+or attempt to capture the enemy vessel. If the ship is big enough, you can choose to board it and fight the crew as you would
+on a mission. If you lose, you lose the ship you were flying, all of the upgrades you had on currently, and all of your coins.
+
+NOTES
+All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
+I expect this to be 15,000 - 20,000 lines of code.
