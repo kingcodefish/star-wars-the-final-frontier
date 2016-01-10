@@ -5,13 +5,6 @@ Characters You Can Be
     Anakin Skywalker (Good) - High Intelligence, but has varied Attack Damage.
     Luke Skywalker - Has Medium Intelligence, and has a high Attack Damage.
     Rey - Has High Intelligence and Medium Attack Damage.
-    BB-8
-    R2-D2
-    Darth Vader
-    Boba Fett
-    Emperor Palpatine
-    Finn
-    Kylo Ren
     
 Your Backup Characters
     Star Wars Prequels
@@ -26,38 +19,38 @@ Your Backup Characters
         Han Solo - Medium Damage amounts, raises all teamates damage by +20 for 3 turns after he attacks.
     
     Star Wars Sequels
-        Finn
-        Poe Dameron
-        Old Leia
-        Old Han Solo
+        Finn - High health.
+        Poe Dameron - Destracts all enemies for 3 turns after he attacks.
+        Old Leia - Brings in a Resistance Trooper for 2 turns.
+        Old Han Solo - Can deal Medium amounts of damage.
 
 Main Enemies
-    Emperor Palpatine
-    Darth Vader
-    Emperor Snoke
+    Emperor Palpatine - Instant Kill, but Jedi have a 10% chance of only losing half of their total health. However, he has low health.
+    Darth Vader - Incredible health, incredible damage.
+    Emperor Snoke - You cannot harm him, but he will go away if all of his allies die.
     
 Enemy Backups
     Star Wars Prequels
-        Count Dooku
-        Darth Maul
-        Jabba The Hutt
-        Jango Fett
-        Nute Gunray
+        Count Dooku - He can attack two players each turn.
+        Darth Maul - 50% of blocking your attack, 25% chance of only recieving half damage.
+        Jabba The Hutt - Every turn he gains +500 health.
+        Jango Fett - Can clone himself for one turn, but cannot attack.
+        Nute Gunray - Every turn summons 1 half-health battle droid.
         General Grevious
         
     Star Wars Original Trilogy
-        Boba Fett
-        Jabba The Hutt
-        Grand Moff Tarkin
+        Boba Fett - Has amazingly high health, 50% chance to dodge a hit, and can deal an incredible amount of damage. However, he attacks really slowly.
+        Jabba The Hutt - Every turn he gains +500 health.
+        Grand Moff Tarkin - Can summon 2 clone troopers. However, they have low health
       
     Star Wars Sequels
-        Kylo Ren
-        Captain Phasma
+        Kylo Ren - If you block his attack, he will deal x2 damage using his crossguard
+        Captain Phasma - Low damage, but incredible reload rate. Also has a 100% chance of counterattack.
         
 Planets
-    Tatooine
-    Jakku
-    Naboo
+    Tatooine - All characters have 50% health.
+    Jakku - All characters have x2 damage.
+    Naboo - Good guys have a 10% chance of summoning a Gungan, enemies have a 5% chance of summoning 2 battle droids.
 
 GAMEPLAY
 You can fly in a spaceship across the galaxy to any of these planets (very much like Misty Planets did), and land on them. 
@@ -97,3 +90,4 @@ opponent.
 NOTES
 All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
 I expect this to be 15,000 - 20,000 lines of code.
+In the future, there will be a way to choose to go to the Dark Side.
