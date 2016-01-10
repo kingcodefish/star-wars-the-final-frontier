@@ -65,12 +65,27 @@ Remember, your character may change depending on what task you have to complete.
 If you're freely exploring, you can switch between the characters and do tasks assigned by the locals in your area.
 Coins can be used to by better equipment or upgrade your ship to help you do these. If you complete these tasks, you earn
 help tokens. These help tokens can be used to summon help in battle if the character you helped is an "ATTACKER" or
-can heal your character if the character you helped is a "HEALER".
+can heal your character if the character you helped is a "HEALER". If the character is a "DISTRACTER", they can give you 10 seconds
+where all enemy fire is concentrated at a random point on the screen.
 
 In space, you can get stuck in battles with TIE fighters, the Death Star, StarKiller Base, and other evil ships. 
 In these battles, you can fire lasers from your ship, use your hyperdrive engine to fly to a random point on the screen,
 or attempt to capture the enemy vessel. If the ship is big enough, you can choose to board it and fight the crew as you would
 on a mission. If you lose, you lose the ship you were flying, all of the upgrades you had on currently, and all of your coins.
+
+ATTACKERS
+Attackers are characters that have high attack damages and have a lot of health. These characters are easy to get, but hard to help -
+If you want to help them to get help tokens, they often request near-impossible tasks.
+
+HEALERS
+Healers are characters that have high heal ammounts and average health. These characters are hard to get, yet easy to help - 
+If you want to help them to get help tokens, they often request protection from an ATTACKER or for you to find an
+ingredient for them to use to make a health potion.
+
+DESTRACTERS
+Destracters are characters that have incredible health amounts but often little to no health or attack effects. They do, however, have
+a destract function where all enemy fire is concentrated on them. They are great for soaking up damage while facing a dangerous
+opponent.
 
 NOTES
 All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
