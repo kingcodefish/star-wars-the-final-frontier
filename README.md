@@ -1,1 +1,1 @@
-# star-wars-the-final-frontier
+# Star Wars: The Final Frontier
