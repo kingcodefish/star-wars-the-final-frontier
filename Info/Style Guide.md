@@ -18,9 +18,11 @@ Multi-line comments with two asterisks should be used for titles of sections to 
 ## Functions
 Functions should always use lower camel-case when being defined and be in function expression form, as that's what KA only allows. There should be no space between the name and parentheses, but a space between the parentheses and curly brackets.
 Like so:
-	var imAFunction = function(x, y) {
-		// Code Here
-	};
+```
+var imAFunction = function(x, y) {
+	// Code Here
+};
+```
 
 ## Objects
 Objects should be declared in non-prototype form in most cases. This allows us to truncate it and be easily visible as what it belongs to. If you're extending another object, the prototype form may be needed. Objects follow the same style guide as functions.
@@ -34,25 +36,29 @@ Always use for loops, they are just always better, end of story. Loops follow th
 ## Conditions
 Conditions follow the same style guide as functions. Conditions always need to have curly brackets. If your condition requires more than two logic operators, you should indent it to keep it clean.
 Example:
-	if(mouseX < 200
-		&& mouseX > 100
-		&& mouseY > 300
-		&& mouseY < 400) {
-		// Code here
-	}
+```
+if(mouseX < 200
+	&& mouseX > 100
+	&& mouseY > 300
+	&& mouseY < 400) {
+	// Code here
+}
+```
 If you have many if's/else if's/else's that use the same variable with different values, use switch instead. If they use slightly different values, but talk about the same topic (e.g., mosue coordinates), use `switch(true)` Switch cases shouldn't use parentheses, and all lines in the case should be on there own line and indented one tab more.
 Example:
-	switch(true) {
-		case (mouseX < 200
-		&& mouseX > 100
-		&& mouseY > 300
-		&& mouseY < 400):
-			// Code Here
-			break;
-		case (mouseX < 300
-		&& mouseX > 200
-		&& mouseY > 300
-		&& mouseY < 400):
-			// Code here
-			break;
-	}
+```
+switch(true) {
+	case (mouseX < 200
+	&& mouseX > 100
+	&& mouseY > 300
+	&& mouseY < 400):
+		// Code Here
+		break;
+	case (mouseX < 300
+	&& mouseX > 200
+	&& mouseY > 300
+	&& mouseY < 400):
+		// Code here
+		break;
+}
+```
