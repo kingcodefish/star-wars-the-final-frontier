@@ -11,7 +11,7 @@ Make self-explanatory variables as often as possible.
 Wrap large blocks of code in parentheses, no need for us to endlessly scroll to the section we want when working.
 
 ## Commenting
-While I don't advise adding dozens of single-line comments to your code to make needless self-explanatory code. But I do advise you give some pointers in confusing areas.
+While I don't advise adding dozens of single-line comments to your code to make needless self-explanatory code, I do advise you give some pointers in confusing areas.
 Multi-line comments with one asterisk should be used for large explanatory definitions.
 Multi-line comments with two asterisks should be used for titles of sections to accentuate the area.
 
