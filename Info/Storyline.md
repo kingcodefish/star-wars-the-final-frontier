@@ -101,7 +101,7 @@ Distracters are characters that have incredible health amounts but often little 
 a distract function where all enemy fire is concentrated on them. They are great for soaking up damage while facing a dangerous
 opponent.
 
-## NOTES
+## Notes
 1. All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
 2. I expect this to be 15,000 - 20,000 lines of code. @KCF says, "Exactly, maybe more. :/"
 3. In the future, there will be a way to choose to go to the Dark Side.
