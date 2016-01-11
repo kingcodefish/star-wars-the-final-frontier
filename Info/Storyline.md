@@ -61,10 +61,10 @@ This is also how you will be completing missions given to you by the resistance.
 4. Tie Fighter
 5. Star Destroyer
 6. Super Star Destroyer
-7. Executor
+7. *Executor*
 8. Advanced Tie Fighter
 9. Slave 1
-10. Finalizer
+10. *Finalizer*
 11. Custom
 
 ## How
