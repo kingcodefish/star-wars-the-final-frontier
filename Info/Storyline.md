@@ -35,6 +35,46 @@ on a mission. If you lose, you lose the ship you were flying, all of the upgrade
 3. In the future, there will be a way to choose to go to the Dark Side.
 4. The save code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
 
+# Ship VS. Ship Info
+
+## Ships You Can Fly
+1. Millinium Falcon
+2. X-Wing
+3. A-Wing
+4. Republic Attack Cruiser
+5. Jedi Starships 
+6. Custom
+
+## Enemy Ships
+1. Death Star
+2. Starkiller Base
+3. Tie Fighter
+4. Star Destroyer
+5. Super Star Destroyer
+6. Advanced Tie Fighter
+7. Custom
+
+## How
+Start off by choosing your ship. Then, attempt to navigate between the asteroids to get to your location using the map. If you run into an enemy ship, you have multiple options.
+
+1. #### Surrender
+If you do this, you lose that ship, but you won't take any damage.
+
+2. #### Attack
+You can attack by pressing the spacebar and aiming your ship so that the lasers are focused on the enemy ship.
+
+3. #### Defend
+You can turn on your shield for up to 30 seconds, where you will be protected. Note - you can't move during this time. Activate by pressing the "S" key.
+
+4. #### Escape
+You can try to out-manuver their ship and escape to your planet. Steer using the arrow keys.
+
+5. #### Hyperdrive
+The hyperdrive is really dangerous. It transports you to a random point on the board. Sounds cool, right? Well, if you travel inside a planet, you die, and you have a chance of spawning within enemy territory.
+
+6. #### Board
+If you board the enemies ship, you can attempt to loot all of their resources. However, this is dangerous, as you will face multiple battles in a row and won't get healed after each one. If you manage to get to the center of the ship, you can collect bounty for every member of the enemy crew.
+
 # Character VS. Character Info
 
 ## Characters You Can Be
@@ -76,9 +116,9 @@ on a mission. If you lose, you lose the ship you were flying, all of the upgrade
 * Count Dooku - He can attack two players each turn.
 * Darth Maul - 50% of blocking your attack, 25% chance of only recieving half damage.
 * Jabba The Hutt - Every turn he gains +500 health.
-* Jango Fett - Can clone himself for one turn, but cannot attack.
+* Jango Fett - Can clone himself for one turn, but cannot attack during that time - clone has x2 attack power.
 * Nute Gunray - Every turn summons 1 half-health battle droid.
-* General Grevious
+* General Grevious - Immense health, incredible attack, 50% to distract
 
 #### Star Wars Original Trilogy
 * Boba Fett - Has amazingly high health, 50% chance to dodge a hit, and can deal an incredible amount of damage. However, he attacks * really slowly.
@@ -120,4 +160,8 @@ Supporters are characters that can protect a character and maximize their attack
 6. #### Blockers
 Blockers are temporary characters that can walk across the screen. They have infinite health, and can protect a character from either side from getting hurt.
 
-
+## How
+You start off in a 3D scenic area. Once a character's turn bar is filled up, that character can do its stuff.
+If a character on your team has a full attack bar, you can click on him/her and select which move you would like to do.
+If an enemy has a full attack bar, they will automatically attack.
+If your characters all have 0% health, you lose.
