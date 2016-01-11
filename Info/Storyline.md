@@ -1,6 +1,42 @@
 
 # Star Wars: The Final Frontier - Storyline
 
+## Gameplay
+You can fly in a spaceship across the galaxy to any of these planets (very much like Misty Planets did), and land on them. 
+You can then play as an iconic character to complete missions on these planets with iconic droids at your side, BB-8, C3PO, and R2-D2.
+And the end of each of these missions you'll have to dual a Sith Lord, or something of the like.
+
+In the start of the game you have a choice to start as the Light side or the Dark side.
+You are then given an option to choose one of three paths, the prequels, the original trilogy, or the sequels.
+Once you have completed an earlier path, you can move on to a later path.
+If you decide to stick around and play through the beginning, you'll receive bonuses later on to make it a more enjoyable experience.
+Your game can be saved at any time by clicking the "Save Game" button in-game, thereby printing a code which you can save
+for later to pick up where you left off. To load your game, just start up the game and click "Load Game".
+You'll be prompted for the code, whereby you will type in your save game code. The game will then reload the same seed gen,
+character, progress, and update you stats based off the unique code ID.
+
+This game is completely free play. This still means you have to do certain missions to move on, but you get to decide when
+you want to do that, and you get to explore and do other side missions too. You can earn extra coins by doing this, help tokens,
+and earn favor for certain factions within the galaxy far far away. This may unlock certain missions later on because of your
+reputation with that faction. You can switch between the characters and do tasks assigned by the locals in your area.
+Coins can be used to by better equipment or upgrade your ship to help you in battle or reach other destinations required.
+Help tokens can be used to summon help in battle if the character you helped is an "ATTACKER", or can heal your character
+if the character you helped is a "HEALER". If the character is a "DISTRACTER", they can give you 10 seconds where all
+enemy fire is concentrated at a random point on the screen.
+
+In space, you can get stuck in battles with TIE fighters, the Death Star, StarKiller Base, and other evil ships. 
+In these battles, you can fire lasers from your ship, use your hyperdrive engine to fly to a random point on the screen,
+or attempt to capture the enemy vessel. If the ship is big enough, you can choose to board it and fight the crew as you would
+on a mission. If you lose, you lose the ship you were flying, all of the upgrades you had on currently, and all of your coins.
+
+## Notes
+1. All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
+2. I expect this to be 15,000 - 20,000 lines of code. @KCF says, "Exactly, maybe more. :/"
+3. In the future, there will be a way to choose to go to the Dark Side.
+4. The save code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
+
+# Character VS. Character Info
+
 ## Characters You Can Be
 * Anakin Skywalker (Good) - High Intelligence, but has varied Attack Damage.
 * Luke Skywalker - Has Medium Intelligence, and has a high Attack Damage.
@@ -10,7 +46,7 @@
 * C-3PO - 5% chance to convince enemy not to attack.
 * R2-D2 - Can shock enemy.
 * BB-8 - Can distract enemy for 2 turns.
-    
+
 ## Your Backup Characters
 #### Star Wars Prequels
 * Padme - Gives all fellow teamates +100 health.
@@ -60,34 +96,6 @@
 * Naboo - Good guys have a 10% chance of summoning a Gungan, enemies have a 5% chance of summoning 2 battle droids.
 * Hoth - Light side characters have 10% chance per attack to summon a Rebel Stormtrooper, and can start with or without a Tauntaun. Dark side characters can start with 3-6 AT-ATs, 2-7 AT-STs, and a 10% chance to summon a Snowtrooper per attack.
 
-## Gameplay
-You can fly in a spaceship across the galaxy to any of these planets (very much like Misty Planets did), and land on them. 
-You can then play as an iconic character to complete missions on these planets with iconic droids at your side, BB-8, C3PO, and R2-D2.
-And the end of each of these missions you'll have to dual a Sith Lord, or something of the like.
-
-In the start of the game you have a choice to start as the Light side or the Dark side.
-You are then given an option to choose one of three paths, the prequels, the original trilogy, or the sequels.
-Once you have completed an earlier path, you can move on to a later path.
-If you decide to stick around and play through the beginning, you'll receive bonuses later on to make it a more enjoyable experience.
-Your game can be saved at any time by clicking the "Save Game" button in-game, thereby printing a code which you can save
-for later to pick up where you left off. To load your game, just start up the game and click "Load Game".
-You'll be prompted for the code, whereby you will type in your save game code. The game will then reload the same seed gen,
-character, progress, and update you stats based off the unique code ID.
-
-This game is completely free play. This still means you have to do certain missions to move on, but you get to decide when
-you want to do that, and you get to explore and do other side missions too. You can earn extra coins by doing this, help tokens,
-and earn favor for certain factions within the galaxy far far away. This may unlock certain missions later on because of your
-reputation with that faction. You can switch between the characters and do tasks assigned by the locals in your area.
-Coins can be used to by better equipment or upgrade your ship to help you in battle or reach other destinations required.
-Help tokens can be used to summon help in battle if the character you helped is an "ATTACKER", or can heal your character
-if the character you helped is a "HEALER". If the character is a "DISTRACTER", they can give you 10 seconds where all
-enemy fire is concentrated at a random point on the screen.
-
-In space, you can get stuck in battles with TIE fighters, the Death Star, StarKiller Base, and other evil ships. 
-In these battles, you can fire lasers from your ship, use your hyperdrive engine to fly to a random point on the screen,
-or attempt to capture the enemy vessel. If the ship is big enough, you can choose to board it and fight the crew as you would
-on a mission. If you lose, you lose the ship you were flying, all of the upgrades you had on currently, and all of your coins.
-
 ## Types of Characters
 1. #### Attackers
     Attackers are characters that have high attack damages and have a lot of health. These characters are easy to get, but hard to help -
@@ -112,8 +120,4 @@ Supporters are characters that can protect a character and maximize their attack
 6. #### Blockers
 Blockers are temporary characters that can walk across the screen. They have infinite health, and can protect a character from either side from getting hurt.
 
-## Notes
-1. All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
-2. I expect this to be 15,000 - 20,000 lines of code. @KCF says, "Exactly, maybe more. :/"
-3. In the future, there will be a way to choose to go to the Dark Side.
-4. The save code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
+
