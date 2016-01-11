@@ -4,7 +4,7 @@
 Constant variables should be fully capitalized and not use camel-case, underscores to separate words.
 Example: `var THIS_VARIABLE_DOESNT_CHANGE = true;`
 Variables should be assigned a value when they are initialized unless there's an issue with looping or something of the like.
-Avoid comma delimiting variables over making a new line, unless the case is where a group of variables haven't been defined yet. But again, avoid a scenario like that.
+Avoid comma delimiting variables over making a new line, unless the case is where a group of variables haven't been defined yet. But again, avoid a scenario like that. On regular variables use lower camel case.
 Make self-explanatory variables as often as possible.
 
 ## Parentheses Wrapping
