@@ -7,56 +7,56 @@
 * Rey - Has High Intelligence and Medium Attack Damage.
 
 ## Your Droids
-    C-3P0 - 5% chance to convince enemy not to attack.
-    R2-D2 - Can shock enemy.
-    BB8 - Can distract enemy for 2 turns.
+* C-3P0 - 5% chance to convince enemy not to attack.
+* R2-D2 - Can shock enemy.
+* BB8 - Can distract enemy for 2 turns.
     
 ## Your Backup Characters
-    Star Wars Prequels
-        Padme - Gives all fellow teamates +100 health.
-        Obi-Wan Kenobi - Deals incredible amounts of damage.
-        Qui-Jon Jinn - Deals high amounts of damage. Raises all fellow teamates damage by +10.
-        
-    Star Wars Original Trilogy
-        Old Ben (Obi-Wan) - 50% chance to distract enemies using the Jedi Mind Trick.
-        Yoda - Has an incredible intelligence, damage, and health. If he dies, all teamates are granted +100 health and +10 damage.
-        Princess Leia - Has incredible accuracy, but a long reload time.
-        Han Solo - Medium Damage amounts, raises all teamates damage by +20 for 3 turns after he attacks.
-    
-    Star Wars Sequels
-        Finn - High health.
-        Poe Dameron - Distracts all enemies for 3 turns after he attacks.
-        Old Leia - Brings in a Resistance Trooper for 2 turns.
-        Old Han Solo - Can deal medium amounts of damage.
+#### Star Wars Prequels
+* Padme - Gives all fellow teamates +100 health.
+* Obi-Wan Kenobi - Deals incredible amounts of damage.
+* Qui-Jon Jinn - Deals high amounts of damage. Raises all fellow teamates damage by +10.
+
+#### Star Wars Original Trilogy
+* Old Ben (Obi-Wan) - 50% chance to distract enemies using the Jedi Mind Trick.
+* Yoda - Has an incredible intelligence, damage, and health. If he dies, all teamates are granted +100 health and +10 damage.
+* Princess Leia - Has incredible accuracy, but a long reload time.
+* Han Solo - Medium Damage amounts, raises all teamates damage by +20 for 3 turns after he attacks.
+
+#### Star Wars Sequels
+* Finn - High health.
+* Poe Dameron - Distracts all enemies for 3 turns after he attacks.
+* Old Leia - Brings in a Resistance Trooper for 2 turns.
+* Old Han Solo - Can deal medium amounts of damage.
 
 ## Main Enemies
-    Emperor Palpatine - Instant Kill, but Jedi have a 10% chance of only losing half of their total health. However, he has low health.
-    Darth Vader - Incredible health, incredible damage.
-    Emperor Snoke - You cannot harm him, but he will go away if all of his allies die.
+* Emperor Palpatine - Instant Kill, but Jedi have a 10% chance of only losing half of their total health. However, he has low health.
+* Darth Vader - Incredible health, incredible damage.
+* Emperor Snoke - You cannot harm him, but he will go away if all of his allies die.
     
 ## Enemy Backups
-    Star Wars Prequels
-        Count Dooku - He can attack two players each turn.
-        Darth Maul - 50% of blocking your attack, 25% chance of only recieving half damage.
-        Jabba The Hutt - Every turn he gains +500 health.
-        Jango Fett - Can clone himself for one turn, but cannot attack.
-        Nute Gunray - Every turn summons 1 half-health battle droid.
-        General Grevious
-        
-    Star Wars Original Trilogy
-        Boba Fett - Has amazingly high health, 50% chance to dodge a hit, and can deal an incredible amount of damage. However, he attacks really slowly.
-        Jabba The Hutt - Every turn he gains +500 health.
-        Grand Moff Tarkin - Can summon 2 clone troopers. However, they have low health
-      
-    Star Wars Sequels
-        Kylo Ren - If you block his attack, he will deal x2 damage using his crossguard
-        Captain Phasma - Low damage, but incredible reload rate. Also has a 100% chance of counterattack.
+#### Star Wars Prequels
+* Count Dooku - He can attack two players each turn.
+* Darth Maul - 50% of blocking your attack, 25% chance of only recieving half damage.
+* Jabba The Hutt - Every turn he gains +500 health.
+* Jango Fett - Can clone himself for one turn, but cannot attack.
+* Nute Gunray - Every turn summons 1 half-health battle droid.
+* General Grevious
+
+#### Star Wars Original Trilogy
+* Boba Fett - Has amazingly high health, 50% chance to dodge a hit, and can deal an incredible amount of damage. However, he attacks * really slowly.
+* Jabba The Hutt - Every turn he gains +500 health.
+* Grand Moff Tarkin - Can summon 2 clone troopers. However, they have low health
+
+#### Star Wars Sequels
+* Kylo Ren - If you block his attack, he will deal x2 damage using his crossguard
+* Captain Phasma - Low damage, but incredible reload rate. Also has a 100% chance of counterattack.
         
 ## Planets
-    Tatooine - All characters have 75% health due to fatigue.
-    Jakku - All characters have x1.5 damage.
-    Naboo - Good guys have a 10% chance of summoning a Gungan, enemies have a 5% chance of summoning 2 battle droids.
-    Hoth - Light side characters have 10% chance per attack to summon a Rebel Stormtrooper, and can start with or without a Tauntaun.Dark side characters can start with 3-6 AT-ATs, 2-7 AT-STs, and a 10% chance to summon a Snowtrooper per attack.
+* Tatooine - All characters have 75% health due to fatigue.
+* Jakku - All characters have x1.5 damage.
+* Naboo - Good guys have a 10% chance of summoning a Gungan, enemies have a 5% chance of summoning 2 battle droids.
+* Hoth - Light side characters have 10% chance per attack to summon a Rebel Stormtrooper, and can start with or without a Tauntaun. Dark side characters can start with 3-6 AT-ATs, 2-7 AT-STs, and a 10% chance to summon a Snowtrooper per attack.
 
 ## Gameplay
 You can fly in a spaceship across the galaxy to any of these planets (very much like Misty Planets did), and land on them. 
@@ -102,7 +102,7 @@ a distract function where all enemy fire is concentrated on them. They are great
 opponent.
 
 ## NOTES
-    All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
-    I expect this to be 15,000 - 20,000 lines of code. @KCF says, "Exactly, maybe more. :/"
-    In the future, there will be a way to choose to go to the Dark Side.
-    The save code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
+1. All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
+2. I expect this to be 15,000 - 20,000 lines of code. @KCF says, "Exactly, maybe more. :/"
+3. In the future, there will be a way to choose to go to the Dark Side.
+4. The save code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
