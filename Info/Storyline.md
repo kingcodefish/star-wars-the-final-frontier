@@ -7,9 +7,9 @@
 * Rey - Has High Intelligence and Medium Attack Damage.
 
 ## Your Droids
-* C-3P0 - 5% chance to convince enemy not to attack.
+* C-3PO - 5% chance to convince enemy not to attack.
 * R2-D2 - Can shock enemy.
-* BB8 - Can distract enemy for 2 turns.
+* BB-8 - Can distract enemy for 2 turns.
     
 ## Your Backup Characters
 #### Star Wars Prequels
@@ -28,6 +28,7 @@
 * Poe Dameron - Distracts all enemies for 3 turns after he attacks.
 * Old Leia - Brings in a Resistance Trooper for 2 turns.
 * Old Han Solo - Can deal medium amounts of damage.
+* Maz Kanata - Has incredible intelligence can provide x2 damage.
 
 ## Main Enemies
 * Emperor Palpatine - Instant Kill, but Jedi have a 10% chance of only losing half of their total health. However, he has low health.
