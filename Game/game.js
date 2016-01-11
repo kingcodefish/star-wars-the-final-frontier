@@ -26,3 +26,15 @@ _  ____/_  /   / /_/ / /_/ / / /_/ // /__ / /_ _  / / /_/ /  / / /(__  )
  * Some random stuff about the game here
  * 
  */
+
+/** --- RENDERING & INPUT --- **/
+var GameHandler = function() {
+  
+};
+GameHandler.prototype.update = function() {
+  
+};
+var gameHandler = new GameHandler();
+draw = function() {
+  gameHandler.update();
+};
