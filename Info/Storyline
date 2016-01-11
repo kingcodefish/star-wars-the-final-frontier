@@ -1,6 +1,8 @@
 
 STAR WARS THE FINAL FRONTIER STORYLINE
 
+var THIS_IS_NOT_TURN_BASED = true;
+
 Characters You Can Be
     Anakin Skywalker (Good) - High Intelligence, but has varied Attack Damage.
     Luke Skywalker - Has Medium Intelligence, and has a high Attack Damage.
@@ -74,11 +76,10 @@ GAMEPLAY
     
     ~ Note ~ This code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
     
-    
-    So in the start of the game, you'll play as Luke Skywalker with R2-D2, you can then defend Hoth, defeat Jabba on Tatooine, and then 
-    face Darth Vader and the Emperor. You can also freely explore Tatooine and do other missions to earn coins. 
-    Once you finish his era, you can move on to Jakku with Rey and BB-8 or to Tatooine (again) with Anakin and C-3PO.
-    Remember, your character may change depending on what task you have to complete. 
+    This game is completely free play. This still means you have to do certain missions to move on, but you get to decide when
+    you want to do that, and you get to explore and do other side missions too. You can earn extra coins by doing this, and
+    earn favor for certain factions within the galaxy far far away. This may unlock certain missions later on because of your
+    reputation with that faction.
     
     If you're freely exploring, you can switch between the characters and do tasks assigned by the locals in your area.
     Coins can be used to by better equipment or upgrade your ship to help you do these. If you complete these tasks, you earn
@@ -107,5 +108,5 @@ DISTRACTERS
 
 NOTES
     All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
-    I expect this to be 15,000 - 20,000 lines of code.
+    I expect this to be 15,000 - 20,000 lines of code. @KCF says, "Exactly, maybe more. :/"
     In the future, there will be a way to choose to go to the Dark Side.
