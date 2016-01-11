@@ -7,9 +7,9 @@
 * Rey - Has High Intelligence and Medium Attack Damage.
 
 ## Your Droids
-* C-3P0 - 5% chance to convince enemy not to attack.
+* C-3PO - 5% chance to convince enemy not to attack.
 * R2-D2 - Can shock enemy.
-* BB8 - Can distract enemy for 2 turns.
+* BB-8 - Can distract enemy for 2 turns.
     
 ## Your Backup Characters
 #### Star Wars Prequels
@@ -28,6 +28,7 @@
 * Poe Dameron - Distracts all enemies for 3 turns after he attacks.
 * Old Leia - Brings in a Resistance Trooper for 2 turns.
 * Old Han Solo - Can deal medium amounts of damage.
+* Maz Kanata - Has incredible intelligence can provide x2 damage.
 
 ## Main Enemies
 * Emperor Palpatine - Instant Kill, but Jedi have a 10% chance of only losing half of their total health. However, he has low health.
@@ -101,15 +102,6 @@ on a mission. If you lose, you lose the ship you were flying, all of the upgrade
 Distracters are characters that have incredible health amounts but often little to no health or attack effects. They do, however, have
 a distract function where all enemy fire is concentrated on them. They are great for soaking up damage while facing a dangerous
 opponent.
-
-4. #### Bosses
-Bosses are characters that have multiple talents. One such example would be General Grevious - he has amazing health, and incredible attack. He also has a 50% chance to focus all enemy fire on him. This means that they are incredibly difficult to defeat.
-
-5. #### Supporters
-Supporters are characters that can protect a character and maximize their attack. Supporters have really low health, but are a great addition to your team.
-
-6. #### Blockers
-Blockers are temporary characters that can walk across the screen. They have infinite health, and can protect a character from either side from getting hurt.
 
 ## Notes
 1. All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
