@@ -2,9 +2,9 @@
 # Star Wars: The Final Frontier - Storyline
 
 ## Characters You Can Be
-    Anakin Skywalker (Good) - High Intelligence, but has varied Attack Damage.
-    Luke Skywalker - Has Medium Intelligence, and has a high Attack Damage.
-    Rey - Has High Intelligence and Medium Attack Damage.
+* Anakin Skywalker (Good) - High Intelligence, but has varied Attack Damage.
+* Luke Skywalker - Has Medium Intelligence, and has a high Attack Damage.
+* Rey - Has High Intelligence and Medium Attack Damage.
 
 ## Your Droids
     C-3P0 - 5% chance to convince enemy not to attack.
