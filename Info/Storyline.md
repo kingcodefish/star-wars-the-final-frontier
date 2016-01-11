@@ -35,6 +35,13 @@ on a mission. If you lose, you lose the ship you were flying, all of the upgrade
 3. In the future, there will be a way to choose to go to the Dark Side.
 4. The save code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
 
+# Explore
+
+## How
+When you explore, you can collect prizes from locals by completing their missions.
+In explore mode, there are no rules. You could wander into the center of the Empire's base, or you could chance upon the Jedi Temple itself.
+This is also how you will be completing missions given to you by the resistance.
+
 # Ship VS. Ship Info
 
 ## Ships You Can Fly
