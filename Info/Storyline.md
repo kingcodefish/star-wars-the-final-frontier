@@ -102,13 +102,13 @@ Distracters are characters that have incredible health amounts but often little 
 a distract function where all enemy fire is concentrated on them. They are great for soaking up damage while facing a dangerous
 opponent.
 
-4.#### Bosses
+4. #### Bosses
 Bosses are characters that have multiple talents. One such example would be General Grevious - he has amazing health, and incredible attack. He also has a 50% chance to focus all enemy fire on him. This means that they are incredibly difficult to defeat.
 
-5.#### Supporters
+5. #### Supporters
 Supporters are characters that can protect a character and maximize their attack. Supporters have really low health, but are a great addition to your team.
 
-6.#### Blockers
+6. #### Blockers
 Blockers are temporary characters that can walk across the screen. They have infinite health, and can protect a character from either side from getting hurt.
 
 ## Notes
