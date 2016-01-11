@@ -9,7 +9,7 @@ Here we're figuring out how we want to structure our program to work the fastest
   * Update
   * CollideWith
   * Draw
-3. MAP
+3. Map
   * Generation
   * Save
 4. GameHandler
