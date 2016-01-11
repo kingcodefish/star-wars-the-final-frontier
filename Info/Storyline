@@ -18,16 +18,16 @@ Your Backup Characters
         Qui-Jon Jinn - Deals high amounts of damage. Raises all fellow teamates damage by +10.
         
     Star Wars Original Trilogy
-        Old Ben (Obi-Wan) - Can destract enemies.
+        Old Ben (Obi-Wan) - 50% chance to distract enemies using the Jedi Mind Trick.
         Yoda - Has an incredible intelligence, damage, and health. If he dies, all teamates are granted +100 health and +10 damage.
         Princess Leia - Has incredible accuracy, but a long reload time.
         Han Solo - Medium Damage amounts, raises all teamates damage by +20 for 3 turns after he attacks.
     
     Star Wars Sequels
         Finn - High health.
-        Poe Dameron - Destracts all enemies for 3 turns after he attacks.
+        Poe Dameron - Distracts all enemies for 3 turns after he attacks.
         Old Leia - Brings in a Resistance Trooper for 2 turns.
-        Old Han Solo - Can deal Medium amounts of damage.
+        Old Han Solo - Can deal medium amounts of damage.
 
 Main Enemies
     Emperor Palpatine - Instant Kill, but Jedi have a 10% chance of only losing half of their total health. However, he has low health.
@@ -53,14 +53,27 @@ Enemy Backups
         Captain Phasma - Low damage, but incredible reload rate. Also has a 100% chance of counterattack.
         
 Planets
-    Tatooine - All characters have 50% health.
-    Jakku - All characters have x2 damage.
+    Tatooine - All characters have 75% health due to fatigue.
+    Jakku - All characters have x1.5 damage.
     Naboo - Good guys have a 10% chance of summoning a Gungan, enemies have a 5% chance of summoning 2 battle droids.
+    Hoth - Light side characters have 10% chance per attack to summon a Rebel Stormtrooper, and can start with or without a Tauntaun.Dark side characters can start with 3-6 AT-ATs, 2-7 AT-STs, and a 10% chance to summon a Snowtrooper per attack.
 
 GAMEPLAY
     You can fly in a spaceship across the galaxy to any of these planets (very much like Misty Planets did), and land on them. 
     You can then play as an iconic character to complete missions on these planets with iconic droids at your side, BB-8, C3PO, and R2-D2.
     And the end of each of these missions you'll have to dual a Sith Lord, or something of the like.
+    
+    In the start of the game you have a choice to start as the Light side or the Dark side.
+    You are then given an option to choose one of three paths, the prequels, the original trilogy, or the sequels.
+    Once you have completed an earlier path, you can move on to a later path.
+    If you decide to stick around and play through the beginning, you'll receive bonuses later on to make it a more enjoyable experience.
+    Your game can be saved at any time by clicking the "Save Game" button in-game, thereby printing a code which you can save
+    for later to pick up where you left off. To load your game, just start up the game and click "Load Game".
+    You'll be prompted for the code, whereby you will type in your save game code. The game will then reload the same seed gen,
+    character, progress, and update you stats based off the unique code ID.
+    
+    ~ Note ~ This code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
+    
     
     So in the start of the game, you'll play as Luke Skywalker with R2-D2, you can then defend Hoth, defeat Jabba on Tatooine, and then 
     face Darth Vader and the Emperor. You can also freely explore Tatooine and do other missions to earn coins. 
