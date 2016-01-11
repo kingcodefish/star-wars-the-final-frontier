@@ -51,6 +51,7 @@
 #### Star Wars Sequels
 * Kylo Ren - If you block his attack, he will deal x2 damage using his crossguard
 * Captain Phasma - Low damage, but incredible reload rate. Also has a 100% chance of counterattack.
+* General Hux
         
 ## Planets
 * Tatooine - All characters have 75% health due to fatigue.
