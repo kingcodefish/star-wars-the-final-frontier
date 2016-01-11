@@ -51,7 +51,7 @@
 #### Star Wars Sequels
 * Kylo Ren - If you block his attack, he will deal x2 damage using his crossguard
 * Captain Phasma - Low damage, but incredible reload rate. Also has a 100% chance of counterattack.
-* General Hux
+* General Hux - Has 10% chance to summon a First Order Stormtrooper at his side. Does high damage, but moves slower than usual.
         
 ## Planets
 * Tatooine - All characters have 75% health due to fatigue.
