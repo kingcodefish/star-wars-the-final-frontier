@@ -1,12 +1,14 @@
 Here we're figuring out how we want to structure our program to work the fastest through an OOP approach.
 
-I. BITMAP
-  A. DRAW
-  B. CACHE
-II. ENTITY
-  A. UPDATE
-  B. COLLIDEWITH
-  C. DRAW
+I. Bitmap
+  A. Draw
+  B. Cache
+II. Entity
+  A. Update
+  B. CollideWith
+  C. Draw
 III. MAP
-  A. GENERATION
-  B. SAVING
+  A. Generation
+  B. Save
+IV. GameHandler
+  A. Update
