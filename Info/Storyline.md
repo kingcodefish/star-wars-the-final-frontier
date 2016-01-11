@@ -50,16 +50,22 @@ This is also how you will be completing missions given to you by the resistance.
 3. A-Wing
 4. Republic Attack Cruiser
 5. Jedi Starships 
-6. Custom
+6. N-1 Starfighter 
+7. Tantive IV
+8. Custom
 
 ## Enemy Ships
 1. Death Star
-2. Starkiller Base
-3. Tie Fighter
-4. Star Destroyer
-5. Super Star Destroyer
-6. Advanced Tie Fighter
-7. Custom
+2. Death Star 2
+3. Starkiller Base
+4. Tie Fighter
+5. Star Destroyer
+6. Super Star Destroyer
+7. Executor
+8. Advanced Tie Fighter
+9. Slave 1
+10. Finalizer
+11. Custom
 
 ## How
 Start off by choosing your ship. Then, attempt to navigate between the asteroids to get to your location using the map. If you run into an enemy ship, you have multiple options.
