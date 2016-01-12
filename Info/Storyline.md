@@ -108,7 +108,7 @@ If you board the enemy's ship, you can attempt to loot all of their resources. H
 #### Star Wars Prequels
 * Padme - Gives all fellow teamates +100 health.
 * Obi-Wan Kenobi - Deals incredible amounts of damage.
-* Qui-Gon Jin - Deals high amounts of damage. Raises all fellow teamates damage by +10.
+* Qui-Gon Jinn - Deals high amounts of damage. Raises all fellow teamates damage by +10.
 
 #### Star Wars Original Trilogy
 * Old Ben (Obi-Wan) - 50% chance to distract enemies using the Jedi Mind Trick.
