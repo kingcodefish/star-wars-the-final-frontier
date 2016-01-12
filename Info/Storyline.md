@@ -90,7 +90,7 @@ You can try to out-manuver their ship and escape to your planet. Steer using the
 The hyperdrive is really dangerous. It transports you to a random point on the board. Sounds cool, right? Well, if you travel inside a planet, you die, and you have a chance of spawning within enemy territory.
 
 6. #### Board
-If you board the enemies ship, you can attempt to loot all of their resources. However, this is dangerous, as you will face multiple battles in a row and won't get healed after each one. If you manage to get to the center of the ship, you can collect bounty for every member of the enemy crew.
+If you board the enemy's ship, you can attempt to loot all of their resources. However, this is dangerous, as you will face multiple battles in a row and won't get healed after each one. If you manage to get to the center of the ship, you can collect bounty for every member of the enemy crew.
 
 # Character VS. Character Info
 
@@ -108,7 +108,7 @@ If you board the enemies ship, you can attempt to loot all of their resources. H
 #### Star Wars Prequels
 * Padme - Gives all fellow teamates +100 health.
 * Obi-Wan Kenobi - Deals incredible amounts of damage.
-* Qui-Jon Jinn - Deals high amounts of damage. Raises all fellow teamates damage by +10.
+* Qui-Gon Jin - Deals high amounts of damage. Raises all fellow teamates damage by +10.
 
 #### Star Wars Original Trilogy
 * Old Ben (Obi-Wan) - 50% chance to distract enemies using the Jedi Mind Trick.
