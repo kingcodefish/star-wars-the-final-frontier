@@ -180,8 +180,9 @@ Blockers are temporary characters that can walk across the screen. They have inf
 ## How
 You start off in a top-down, 2.5D scenic area. Once a character's turn bar is filled up, that character can do its stuff.
 If a character on your team has a full attack bar, his different abilities will automatically appear in your "Action" bar. 
-If an enemy has a full attack bar, they will automatically attack your character.
-If your characters all have 0% health, you lose.
+If an enemy has a full attack bar, they will automatically attack your character by randomly selecting an action.
+If your characters all have 0% health, you lose $10,000. 
+If the enemy characters all have 0% health, you can claim a special prize!
 
 ### Action Bar
 The action bar is a small, gray bar at the bottom of the screen with all of your current actions on it. If you click on one of these actions, it will automatically execute it. 
