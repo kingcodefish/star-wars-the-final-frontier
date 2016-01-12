@@ -11,9 +11,10 @@ Make self-explanatory variables as often as possible.
 Wrap large blocks of code in parentheses, no need for us to endlessly scroll to the section we want when working.
 
 ## Commenting
-While I don't advise adding dozens of single-line comments to your code to make needless self-explanatory code, I do advise you give some pointers in confusing areas.
+While I don't advise adding dozens of single-line comments to your code to make needless self-explanatory code, I do advise you give some pointers in confusing areas. Always keep a space after the beginning of a comment and make it capitalized, and if it's a multi-line, a space before the ending too.
 Multi-line comments with one asterisk should be used for large explanatory definitions.
 Multi-line comments with two asterisks should be used for titles of sections to accentuate the area.
+Example: `// This is a comment`
 
 ## Functions
 Functions should always use lower camel-case when being defined and be in function expression form, as that's what KA only allows. There should be no space between the name and parentheses, but a space between the parentheses and curly brackets.
