@@ -47,25 +47,29 @@ This is also how you will be completing missions given to you by the resistance.
 ## Ships You Can Fly
 1. Millinium Falcon
 2. X-Wing
-3. A-Wing
-4. Republic Attack Cruiser
-5. Jedi Starships 
-6. N-1 Starfighter 
-7. Tantive IV
-8. Custom
+3. Y-Wing
+4. A-Wing
+5. B-Wing
+6. Republic Attack Cruiser
+7. Jedi Starships 
+8. N-1 Starfighter 
+9. Tantive IV
+10. Custom
 
 ## Enemy Ships
 1. Death Star
 2. Death Star 2
 3. Starkiller Base
-4. Tie Fighter
-5. Star Destroyer
-6. Super Star Destroyer
-7. *Executor*
-8. Advanced Tie Fighter
-9. Slave 1
-10. *Finalizer*
-11. Custom
+4. TIE Fighter
+5. TIE Interceptor
+6. Star Destroyer
+7. Super Star Destroyer
+8. *Executor*
+9. Advanced Tie Fighter
+10. TIE Bomber
+11. Slave 1
+12. *Finalizer*
+13. Custom
 
 ## How
 Start off by choosing your ship. Then, attempt to navigate between the asteroids to get to your location using the map. If you run into an enemy ship, you have multiple options.
