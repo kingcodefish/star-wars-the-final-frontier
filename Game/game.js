@@ -40,13 +40,21 @@ _  ____/_  /   / /_/ / /_/ / / /_/ // /__ / /_ _  / / /_/ /  / / /(__  )
  */
 
 /** --- RENDERING & INPUT --- **/
-var GameHandler = function() {
-  
+var Menu = {
+    draw: function() {
+        background(0, 0, 0);
+    }
 };
-GameHandler.prototype.update = function() {
-  
+var GameHandler = {
+    currScreen: 0,
+    update: function() {
+        switch(this.currScreen) {
+            case 0:
+                Menu.draw();
+                break;
+        }
+    }
 };
-var gameHandler = new GameHandler();
 draw = function() {
-  gameHandler.update();
+    GameHandler.update();
 };
