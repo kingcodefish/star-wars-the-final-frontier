@@ -1,24 +1,24 @@
 #Credits
 
-## Main Designers
+### Main Designers
 
-###### KCF
+#### KCF
 - Gameplay
 - Rendering
 - Storyline
 - OOP
  
-###### AlexT
+#### AlexT
 - Gameplay
 - Storyline
 - OOP
 - Graphics
 
-###### Eytukan
+#### Eytukan
 - Graphics
 - Storyline
 
-## Helpers
+### Helpers
 
 -
 -
