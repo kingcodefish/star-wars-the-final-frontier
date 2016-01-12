@@ -45,7 +45,7 @@ This is also how you will be completing missions given to you by the resistance.
 # Ship VS. Ship Info
 
 ## Ships You Can Fly
-1. Millinium Falcon
+1. Millenium Falcon
 2. X-Wing
 3. Y-Wing
 4. A-Wing
