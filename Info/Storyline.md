@@ -2,27 +2,29 @@
 # Star Wars: The Final Frontier - Storyline
 
 ## Gameplay
-You can fly in a spaceship across the galaxy to any of these planets (very much like Misty Planets did), and land on them. 
-You can then play as an iconic character to complete missions on these planets with iconic droids at your side, BB-8, C3PO, and R2-D2.
-And the end of each of these missions you'll have to dual a Sith Lord, or something of the like.
+You start off by flying a spaceship of your choice across the galaxy to any of these planets (very much like Misty Planets did), and land on them. 
+You can then play as an iconic character to complete missions on these planets with iconic droids at your side (such as BB-8, C3PO, and R2-D2).
+And the end of each of these missions you will have to dual a Sith Lord, or someone that poses an equal challenge.
 
-In the start of the game you have a choice to start as the Light side or the Dark side.
-You are then given an option to choose one of three paths, the prequels, the original trilogy, or the sequels.
+In the start of the game you have a choice to start as the Light Side or the Dark Side.
+If you are on the Light Side, you are one of the main Light Side Characters during your missinos.
+If you are on the Dark Side, you are one of the main enemies (Sith, Empire, First Order), and you are trying to accomplish a specific goal. 
+You are then given an option to choose one of three paths - the Prequels, the Original Trilogy, or the Sequels.
 Once you have completed an earlier path, you can move on to a later path.
-If you decide to stick around and play through the beginning, you'll receive bonuses later on to make it a more enjoyable experience.
+If you decide to stick around and play through the beginning, you will receive bonuses later on to make this game a more enjoyable experience.
 Your game can be saved at any time by clicking the "Save Game" button in-game, thereby printing a code which you can save
 for later to pick up where you left off. To load your game, just start up the game and click "Load Game".
-You'll be prompted for the code, whereby you will type in your save game code. The game will then reload the same seed gen,
-character, progress, and update you stats based off the unique code ID.
+You'll be prompted for the code, whereby you will type in your save game code. The game will then reload the same seed,
+character, progress, and update your stats based off of the unique code ID.
 
 This game is completely free play. This still means you have to do certain missions to move on, but you get to decide when
 you want to do that, and you get to explore and do other side missions too. You can earn extra coins by doing this, help tokens,
 and earn favor for certain factions within the galaxy far far away. This may unlock certain missions later on because of your
 reputation with that faction. You can switch between the characters and do tasks assigned by the locals in your area.
-Coins can be used to by better equipment or upgrade your ship to help you in battle or reach other destinations required.
+Coins can be used to buy better equipment, upgrade your ship to help you in battle or reach other destinations required.
 Help tokens can be used to summon help in battle if the character you helped is an "ATTACKER", or can heal your character
 if the character you helped is a "HEALER". If the character is a "DISTRACTER", they can give you 10 seconds where all
-enemy fire is concentrated at a random point on the screen.
+enemy fire is concentrated at a random point on the screen (in a Ship VS Ship battle).
 
 In space, you can get stuck in battles with TIE fighters, the Death Star, StarKiller Base, and other evil ships. 
 In these battles, you can fire lasers from your ship, use your hyperdrive engine to fly to a random point on the screen,
@@ -30,19 +32,20 @@ or attempt to capture the enemy vessel. If the ship is big enough, you can choos
 on a mission. If you lose, you lose the ship you were flying, all of the upgrades you had on currently, and all of your coins.
 
 ## Notes
-1. All this is loaded in images that are cached, there are loading screens between levels, to reduce lag.
-2. I expect this to be 15,000 - 20,000 lines of code. @KCF says, "Exactly, maybe more. :/"
-3. In the future, there will be a way to choose to go to the Dark Side.
+1. All this is loaded in images that are cached, there are loading screens between levels to reduce lag.
+2. I expect this to be 20K - 60K lines of code.
+3. In the future, there will be a way to choose to go to the Dark Side, but until then there will only be the light side.
 4. The save code may use a series of hexadecimal numbers later depending on the impending situation that we'll need it in.
 
-# Explore
+# Explore Mode
+Exploring is often better known as free-play mode. This means that there are no time requirements, no missions to undertake, and you can do whatever you like. Sub-Exploring mode is when your screen looks identical to Exploring mode, except you are merely traveling through the Exploration Territory to accomplish a mission.
 
 ## How
-When you explore, you can collect prizes from locals by completing their missions.
-In explore mode, there are no rules. You could wander into the center of the Empire's base, or you could chance upon the Jedi Temple itself.
-This is also how you will be completing missions given to you by the resistance.
+When you explore, you can collect prizes from locals by completing their missions. This can include capturing bad guys, finding stolen treasures, or something equally hard. On some missions, there are minor penalties for not completing, but not many. 
+In explore mode, there are no rules. You could wander into the center of the Empire's base, or you could chance upon the Jedi Temple itself. However, you won't be part of either side - instead of being a normal Jedi, you will be an "Explorer", and you won't be allowed inside any of the important places. This also means that if you accidentally anger someone from your own team, they can still attack you until you turn off explore mode.
 
-# Ship VS. Ship Info
+# Ship VS. Ship Mode
+Ship VS Ship mode is how you get from one planet to another. Oftentimes, there is nothing more than the black void of space keeping you from a location, but dangers can often occur such as asteroid fields and enemies. 
 
 ## Ships You Can Fly
 1. Millenium Falcon
@@ -92,7 +95,8 @@ The hyperdrive is really dangerous. It transports you to a random point on the b
 6. #### Board
 If you board the enemy's ship, you can attempt to loot all of their resources. However, this is dangerous, as you will face multiple battles in a row and won't get healed after each one. If you manage to get to the center of the ship, you can collect bounty for every member of the enemy crew.
 
-# Character VS. Character Info
+# Character VS. Character Mode
+Character VS Character Mode is how you can battle other characters. It is often known as the "Arena". When you anger a bad guy, you will automatically be transported to the Arena for battle. If you win, you will be teleported right back to where you were. If you lose, you lose everything you previously had and start the game again outside of the Arena.
 
 ## Characters You Can Be
 * Anakin Skywalker (Good) - High Intelligence, but has varied Attack Damage.
@@ -187,3 +191,14 @@ If the enemy characters all have 0% health, you can claim a special prize!
 ### Action Bar
 The action bar is a small, gray bar at the bottom of the screen with all of your current actions on it. If you click on one of these actions, it will automatically execute it. 
 If you have a special advantage, you can choose not to activate it (extra character, etc). 
+
+# Challenge Mode
+Challenge Mode is what allows you to use your brain in Star Wars: The Final Frontier. From picking locks to finding important information swept up in a sandstorm, there might appear to be no solution - but there always is.
+
+## Current Puzzles
+-
+-
+-
+
+## How
+
