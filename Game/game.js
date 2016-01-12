@@ -335,7 +335,7 @@ var Menu = {
         textSize(40);
         text("The Final Frontier", 300, 220);
         button(300, 300, 200, 53, 10, "Play", 24, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0), color(0, 0, 0, 100), 2, color(0, 0, 0, 100), 2);
-        button(300, 360, 200, 53, 10, "options", 24, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0), color(0, 0, 0, 100), 2, color(0, 0, 0, 100), 2);
+        button(300, 360, 200, 53, 10, "Options", 24, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0), color(0, 0, 0, 100), 2, color(0, 0, 0, 100), 2);
         button(300, 420, 200, 53, 10, "Credits", 24, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0), color(0, 0, 0, 100), 2, color(0, 0, 0, 100), 2);
     }
 };
