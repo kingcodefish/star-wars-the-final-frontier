@@ -1,5 +1,25 @@
-# Credits
+#Credits
 
-###### Lead Designer - KingCodeFish
-###### Lead Designer - AlexT
-###### Lead Designer - Eytukan
+## Main Designers
+
+###### KCF
+- Gameplay
+- Rendering
+- Storyline
+- OOP
+ 
+###### AlexT
+- Gameplay
+- Storyline
+- OOP
+- Graphics
+
+###### Eytukan
+- Graphics
+- Storyline
+
+## Helpers
+
+-
+-
+-
