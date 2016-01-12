@@ -179,6 +179,10 @@ Blockers are temporary characters that can walk across the screen. They have inf
 
 ## How
 You start off in a top-down, 2.5D scenic area. Once a character's turn bar is filled up, that character can do its stuff.
-If a character on your team has a full attack bar, you can click on him/her and select which move you would like to do.
-If an enemy has a full attack bar, they will automatically attack.
+If a character on your team has a full attack bar, his different abilities will automatically appear in your "Action" bar. 
+If an enemy has a full attack bar, they will automatically attack your character.
 If your characters all have 0% health, you lose.
+
+### Action Bar
+The action bar is a small, gray bar at the bottom of the screen with all of your current actions on it. If you click on one of these actions, it will automatically execute it. 
+If you have a special advantage, you can choose not to activate it (extra character, etc). 
