@@ -178,7 +178,7 @@ Supporters are characters that can protect a character and maximize their attack
 Blockers are temporary characters that can walk across the screen. They have infinite health, and can protect a character from either side from getting hurt.
 
 ## How
-You start off in a 3D scenic area. Once a character's turn bar is filled up, that character can do its stuff.
+You start off in a top-down, 2.5D scenic area. Once a character's turn bar is filled up, that character can do its stuff.
 If a character on your team has a full attack bar, you can click on him/her and select which move you would like to do.
 If an enemy has a full attack bar, they will automatically attack.
 If your characters all have 0% health, you lose.
