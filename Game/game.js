@@ -16,10 +16,10 @@
  ______   ___                   ______   
 /\  _  \ /\_ \                 /\__  _\  
 \ \ \L\ \\//\ \      __   __  _\/_/\ \/  
-\ \  __ \ \ \ \   /'__`\/\ \/'\  \ \ \  
- \ \ \/\ \ \_\ \_/\  __/\/>  </   \ \ \ 
-  \ \_\ \_\/\____\ \____\/\_/\_\   \ \_\
-   \/_/\/_/\/____/\/____/\//\/_/    \/_/
+ \ \  __ \ \ \ \   /'__`\/\ \/'\  \ \ \  
+  \ \ \/\ \ \_\ \_/\  __/\/>  </   \ \ \ 
+   \ \_\ \_\/\____\ \____\/\_/\_\   \ \_\
+    \/_/\/_/\/____/\/____/\//\/_/    \/_/
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
       ___           ___           ___           ___           ___           ___           ___     
@@ -47,6 +47,7 @@ _  ____/_  /   / /_/ / /_/ / / /_/ // /__ / /_ _  / / /_/ /  / / /(__  )
 var NUMBER_OF_ARCS = 13;
 
 /** --- DYNAMIC GLOBAL VARIABLES --- **/
+var currScreen = "loading";
 var keys = [];
 var mouseOverButton = "";
 var cacheImageNo = 0;
@@ -80,138 +81,188 @@ var button = function(x, y, w, h, r, t, ts, tf, htf, f, hf, s, sw, hs, hsw) {
 /** --- RENDERING & INPUT --- **/
 var PreCache = {
     starWarsLogo: function(c) {
-            c.background(0, 0, 0, 0);
-            c.stroke(255, 232, 31);
-            c.strokeWeight(4);
-            c.strokeCap(SQUARE);
-            c.fill(0);
-            c.pushMatrix();
-            c.scale(0.7);
-            c.translate(230, -30);
-            //s & t
-            c.beginShape();
-                c.vertex(193,112);
-                c.vertex(71,112);
-                c.bezierVertex(47,115,46,142,71,162);
-                c.vertex(2,162);
-                c.vertex(2,191);
-                c.vertex(87,191);
-                c.bezierVertex(130,171,91,136,91,136);
-                c.vertex(127,136);
-                c.vertex(127,191);
-                c.vertex(158,191);
-                c.vertex(158,136);
-                c.vertex(193,136);
-                c.vertex(193,110);
-            c.endShape();
-            //a
-            c.beginShape();
-                c.vertex(206,112);
-                c.vertex(182,191);
-                c.vertex(211,191);
-                c.vertex(216,179);
-                c.vertex(242,179);
-                c.vertex(246,191);
-                c.vertex(277,191);
-                c.vertex(252,112);
-                c.vertex(205.0,112);
-            c.endShape();
-            c.beginShape();
-                c.vertex(230,137);
-                c.vertex(223,156);
-                c.vertex(236,156);
-                c.vertex(230,137);
-            c.endShape();
-            //R
-            c.beginShape();
-                c.vertex(284,112);
-                c.vertex(284,191);
-                c.vertex(314,191);
-                c.vertex(314,170);
-                c.vertex(338,191);
-                c.vertex(395,191);
-                c.vertex(395,162);
-                c.vertex(351,162);
-                c.bezierVertex(376,140,360,118,351,112);
-                c.vertex(282,112);
-            c.endShape();
-            c.beginShape();
-                c.vertex(316,133);
-                c.vertex(336,133);
-                c.bezierVertex(339,138,336,143,336,143);
-                c.vertex(316,143);
-                c.vertex(316,131);
-            c.endShape();
-            //translate(0,25);
-            //W
-            c.beginShape();
-                c.vertex(36,199);
-                c.vertex(1,199);
-                c.vertex(29,280);
-                c.vertex(55,280);
-                c.vertex(65,250);
-                c.vertex(75,280);
-                c.vertex(103,280);
-                c.vertex(125,199);
-                c.vertex(96,199);
-                c.vertex(91,217);
-                c.vertex(84,199);
-                c.vertex(48,199);
-                c.vertex(42,217);
-                c.vertex(36,199);
-            c.endShape();
-            //a
-            c.pushMatrix();
-            c.translate(-64,87);
-            c.beginShape();
-                c.vertex(206,112);
-                c.vertex(182,192);
-                c.vertex(211,192);
-                c.vertex(216,179);
-                c.vertex(242,179);
-                c.vertex(246,192);
-                c.vertex(277,192);
-                c.vertex(252,112);
-                c.vertex(205.0,112);
-            c.endShape();
-            c.beginShape();
-                c.vertex(230,137);
-                c.vertex(223,156);
-                c.vertex(236,156);
-                c.vertex(230,137);
-            c.endShape();
-            c.popMatrix();
-            c.pushMatrix();
-            c.translate(-63,88);
-            //R
-            c.beginShape();
-                c.vertex(284,112);
-                c.vertex(284,191);
-                c.vertex(314,191);
-                c.vertex(314,170);
-                c.vertex(338,191);
-                c.vertex(416,191);
-                c.bezierVertex(416,191,456,172,419,137);
-                c.vertex(457,137);
-                c.vertex(457,112);
-                c.vertex(408,112);
-                c.bezierVertex(362,120,388,155,395,162);
-                c.vertex(351,162);
-                c.bezierVertex(376,140,360,118,351,112);
-                c.vertex(282,112);
-            c.endShape();
-            c.beginShape();
-                c.vertex(316,133);
-                c.vertex(336,133);
-                c.bezierVertex(339,138,336,143,336,143);
-                c.vertex(316,143);
-                c.vertex(316,131);
-            c.endShape();
-            c.popMatrix();
-            c.popMatrix();
-            
-            return c;
-        }
+        c.background(0, 0, 0, 0);
+        c.stroke(255, 232, 31);
+        c.strokeWeight(4);
+        c.strokeCap(SQUARE);
+        c.fill(0);
+        c.pushMatrix();
+        c.scale(0.7);
+        c.translate(230, -30);
+        //s & t
+        c.beginShape();
+            c.vertex(193,112);
+            c.vertex(71,112);
+            c.bezierVertex(47,115,46,142,71,162);
+            c.vertex(2,162);
+            c.vertex(2,191);
+            c.vertex(87,191);
+            c.bezierVertex(130,171,91,136,91,136);
+            c.vertex(127,136);
+            c.vertex(127,191);
+            c.vertex(158,191);
+            c.vertex(158,136);
+            c.vertex(193,136);
+            c.vertex(193,110);
+        c.endShape();
+        //a
+        c.beginShape();
+            c.vertex(206,112);
+            c.vertex(182,191);
+            c.vertex(211,191);
+            c.vertex(216,179);
+            c.vertex(242,179);
+            c.vertex(246,191);
+            c.vertex(277,191);
+            c.vertex(252,112);
+            c.vertex(205.0,112);
+        c.endShape();
+        c.beginShape();
+            c.vertex(230,137);
+            c.vertex(223,156);
+            c.vertex(236,156);
+            c.vertex(230,137);
+        c.endShape();
+        //R
+        c.beginShape();
+            c.vertex(284,112);
+            c.vertex(284,191);
+            c.vertex(314,191);
+            c.vertex(314,170);
+            c.vertex(338,191);
+            c.vertex(395,191);
+            c.vertex(395,162);
+            c.vertex(351,162);
+            c.bezierVertex(376,140,360,118,351,112);
+            c.vertex(282,112);
+        c.endShape();
+        c.beginShape();
+            c.vertex(316,133);
+            c.vertex(336,133);
+            c.bezierVertex(339,138,336,143,336,143);
+            c.vertex(316,143);
+            c.vertex(316,131);
+        c.endShape();
+        //translate(0,25);
+        //W
+        c.beginShape();
+            c.vertex(36,199);
+            c.vertex(1,199);
+            c.vertex(29,280);
+            c.vertex(55,280);
+            c.vertex(65,250);
+            c.vertex(75,280);
+            c.vertex(103,280);
+            c.vertex(125,199);
+            c.vertex(96,199);
+            c.vertex(91,217);
+            c.vertex(84,199);
+            c.vertex(48,199);
+            c.vertex(42,217);
+            c.vertex(36,199);
+        c.endShape();
+        //a
+        c.pushMatrix();
+        c.translate(-64,87);
+        c.beginShape();
+            c.vertex(206,112);
+            c.vertex(182,192);
+            c.vertex(211,192);
+            c.vertex(216,179);
+            c.vertex(242,179);
+            c.vertex(246,192);
+            c.vertex(277,192);
+            c.vertex(252,112);
+            c.vertex(205.0,112);
+        c.endShape();
+        c.beginShape();
+            c.vertex(230,137);
+            c.vertex(223,156);
+            c.vertex(236,156);
+            c.vertex(230,137);
+        c.endShape();
+        c.popMatrix();
+        c.pushMatrix();
+        c.translate(-63,88);
+        //R
+        c.beginShape();
+            c.vertex(284,112);
+            c.vertex(284,191);
+            c.vertex(314,191);
+            c.vertex(314,170);
+            c.vertex(338,191);
+            c.vertex(416,191);
+            c.bezierVertex(416,191,456,172,419,137);
+            c.vertex(457,137);
+            c.vertex(457,112);
+            c.vertex(408,112);
+            c.bezierVertex(362,120,388,155,395,162);
+            c.vertex(351,162);
+            c.bezierVertex(376,140,360,118,351,112);
+            c.vertex(282,112);
+        c.endShape();
+        c.beginShape();
+            c.vertex(316,133);
+            c.vertex(336,133);
+            c.bezierVertex(339,138,336,143,336,143);
+            c.vertex(316,143);
+            c.vertex(316,131);
+        c.endShape();
+        c.popMatrix();
+        c.popMatrix();
+        
+        return c;
+    },
+    red: function(c) {
+        c.background(0, 0, 0, 0);
+        c.stroke(255, 232, 31);
+        c.strokeWeight(4);
+        c.strokeCap(SQUARE);
+        c.fill(255, 0, 0);
+        c.rect(0, 0, 200, 200);
+        
+        return c;
+    },
+    green: function(c) {
+        c.background(0, 0, 0, 0);
+        c.stroke(255, 232, 31);
+        c.strokeWeight(4);
+        c.strokeCap(SQUARE);
+        c.fill(13, 255, 0);
+        c.rect(0, 0, 200, 200);
+        
+        return c;
+    },
+    blue: function(c) {
+        c.background(0, 0, 0, 0);
+        c.stroke(255, 232, 31);
+        c.strokeWeight(4);
+        c.strokeCap(SQUARE);
+        c.fill(0, 21, 255);
+        c.rect(0, 0, 200, 200);
+        
+        return c;
+    },
+    yellow: function(c) {
+        c.background(0, 0, 0, 0);
+        c.stroke(255, 232, 31);
+        c.strokeWeight(4);
+        c.strokeCap(SQUARE);
+        c.fill(255, 234, 0);
+        c.rect(0, 0, 200, 200);
+        
+        return c;
+    },
+    orange: function(c) {
+        c.background(0, 0, 0, 0);
+        c.stroke(255, 232, 31);
+        c.strokeWeight(4);
+        c.strokeCap(SQUARE);
+        c.fill(255, 170, 0);
+        c.rect(0, 0, 200, 200);
+        
+        return c;
+    }
 };
 var Cache = {
     Bitmap: {
@@ -234,9 +285,16 @@ var Loading = {
     draw: function() {
         background(0, 0, 0);
         
-        if(cacheImageNo < 1) {
-            Cache.Bitmap.starWarsLogo = cacheImage(PreCache.starWarsLogo, width, height);
-            cacheImageNo++;
+        var counter = 0;
+        if(frameCount % 5 === 0) {
+            for(var i in PreCache) {
+                if(counter === cacheImageNo) {
+                    Cache.Bitmap[i] = cacheImage(PreCache[i], width, height);
+                    cacheImageNo++;
+                    break;
+                }
+                counter++;
+            }
         }
         strokeCap(SQUARE);
         colorMode(HSB);
@@ -245,7 +303,7 @@ var Loading = {
         strokeWeight(3);
         // Draws the Shadow
         for(var i = 1; i < NUMBER_OF_ARCS; i++) {
-            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 15 + -i * 15, (NUMBER_OF_ARCS + 1) * 15 + -i * 15, frameCount / 2 * i % 360 - 180, frameCount / 2 * i % 360);
+            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 40 + -i * 30, (NUMBER_OF_ARCS + 1) * 40 + -i * 30, frameCount / 2 * i % 360 - 180, frameCount / 2 * i % 360);
         }
         strokeWeight(3);
         // Controls Color
@@ -253,15 +311,26 @@ var Loading = {
         noFill();
         // Draws the main arcs
         for(var i = 1; i < NUMBER_OF_ARCS; i++) {
-            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 15 + -i * 15, (NUMBER_OF_ARCS + 1) * 15 + -i * 15, frameCount / 2 * i % 360, frameCount / 2 * i % 360 + 180);
+            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 40 + -i * 30, (NUMBER_OF_ARCS + 1) * 40 + -i * 30, frameCount / 2 * i % 360, frameCount / 2 * i % 360 + 180);
         }
         colorMode(RGB);
-        image(Cache.Bitmap.starWarsLogo, 0, 0, 200, 200);
+        var counter2 = 0;
+        for(var i in Cache.Bitmap) {
+            if(counter2 === cacheImageNo - 1) {
+                image(Cache.Bitmap[i], width / 2, 300, 120, 120);
+                if(counter2 === Object.keys(PreCache).length-1) {
+                    currScreen = "menu";
+                }
+                break;
+            }
+            counter2++;
+        }
     }
 };
 var Menu = {
     draw: function() {
         background(0, 0, 0);
+        image(Cache.Bitmap.starWarsLogo, width / 2, height / 2);
         fill(255, 232, 31);
         textSize(40);
         text("The Final Frontier", 300, 220);
@@ -271,16 +340,16 @@ var Menu = {
     }
 };
 var GameHandler = {
-    currScreen: "loading",
     update: function() {
         // Default Styling
         noStroke();
         strokeWeight(1);
         rectMode(CENTER);
+        imageMode(CENTER);
         textAlign(CENTER, CENTER);
         textFont(createFont("Star Jedi Rounded"));
         
-        switch(this.currScreen) {
+        switch(currScreen) {
             case "loading":
                 Loading.draw();
                 break;
