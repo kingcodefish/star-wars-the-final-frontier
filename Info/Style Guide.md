@@ -32,7 +32,7 @@ Objects should be declared in non-prototype form in most cases. This allows us t
 Default KA functions should not have `var` at the beginning, as this is suggested by the courses. It also makes it easy to differentiate.
 
 ## Loops
-Always use for loops, they are just always better, end of story. Loops follow the same style guide as functions.
+Always use for loops, they are just always better, end of story. Never use for...in loops unless you happen to be looping over an object, which would make it required. Using for...in on arrays and the like can give undesired results. Avoid them unless necessary. Loops follow the same style guide as functions.
 
 ## Conditions
 Conditions follow the same style guide as functions. Conditions always need to have curly brackets. If your condition requires more than two logic operators, you should indent it to keep it clean.
