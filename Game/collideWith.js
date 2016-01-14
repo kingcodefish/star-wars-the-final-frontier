@@ -24,55 +24,60 @@ var collideWith = function(object1, object2) {
 
 var blocks = [new Block(e+200, f+175, 40, 40), new Block(e+300, f+200, 40, 40)];
 
-// Define Player
-var Player {
-    x: null,
-    y: null,
-    width: null,
-    height: null,
-    speed: 2.5,
-    update: function() {
-        if (keys[RIGHT]) {
-            this.x += this.speed;
-        }
-        if (keys[LEFT]) {
-            this.x -= this.speed;
-        }
+// The Entity Class is a unique class that is extended in Player and Enemy
+var Entity = function(x, y, width, height, bitmap) {
+	this.x = x;
+	this.y = y;
+	this.width = width;
+	this.height = height;
+	this.speed = 2.5;
+	this.bitmap = bitmap;
+};
+Entity.prototype.draw = function() {
+	image(this.bitmap, this.x, this.y);
+};
 
-        for (var i = 0; i < blocks.length; i++) {
-            if (collideWith(this, blocks[i])) {
-                if (keys[RIGHT]) {
-                    this.x -= this.speed;
-                }
-                if (keys[LEFT]) {
-                    this.x += this.speed;
-                }
-                break; // Collision was found. No need to continue checking
+var Player = function(x, y, width, height, speed, bitmap) {
+	Object.call(this, x, y, width, height, speed, bitmap);
+};
+Player.prototype = Object.create(Entity.prototype);
+Player.prototype.update = function() {
+    if (keys[RIGHT]) {
+        this.x += this.speed;
+    }
+    if (keys[LEFT]) {
+        this.x -= this.speed;
+    }
+
+    for (var i = 0; i < blocks.length; i++) {
+        if (collideWith(this, blocks[i])) {
+            if (keys[RIGHT]) {
+                this.x -= this.speed;
             }
-        }
-
-        if (keys[UP]) {
-            this.y -= this.speed;
-        }
-        if (keys[DOWN]) {
-            this.y += this.speed;
-        }
-
-        for (var each in blocks) {
-            if (collideWith(this, blocks[each])) {
-                if (keys[UP]) {
-                    this.y += this.speed;
-                }
-                if (keys[DOWN]) {
-                    this.y -= this.speed;
-                }
-                break;
+            if (keys[LEFT]) {
+                this.x += this.speed;
             }
+            break; // Collision was found. No need to continue checking
         }
-    },
-    draw: function() {
-        fill(255, 0, 0);
-        rect(this.x, this.y, this.width, this.height);
+    }
+
+    if (keys[UP]) {
+        this.y -= this.speed;
+    }
+    if (keys[DOWN]) {
+        this.y += this.speed;
+    }
+
+    for (var i = 0; i < blocks; i++) {
+        if (collideWith(this, blocks[i])) {
+            if (keys[UP]) {
+                this.y += this.speed;
+            }
+            if (keys[DOWN]) {
+                this.y -= this.speed;
+            }
+            break;
+        }
     }
 };
 
