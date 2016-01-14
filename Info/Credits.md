@@ -6,16 +6,20 @@
 - Gameplay
 - Rendering
 - Storyline
-- OOP
+- Core Programming
  
 #### AlexT
 - Gameplay
 - Storyline
-- OOP
 - Graphics
 
 #### Eytukan
 - Graphics
+- Storyline
+
+#### Indie
+- Gameplay
+- Core Programming
 - Storyline
 
 ### Helpers
