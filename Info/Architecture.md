@@ -2,13 +2,15 @@
 
 Here we're figuring out how we want to structure our program to work the fastest through an OOP approach.
 
-1. Bitmap**
-  * Draw
-  * Cache
+1. Cache**
+  * Bitmap
+  * Sounds
 2. Entity
-  * Update
-  * CollideWith
   * Draw
+  * Player
+   *  Update
+  * Enemy
+   *  Update
 3. Map
   * Generation
   * Save
