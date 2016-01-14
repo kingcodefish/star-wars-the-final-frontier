@@ -1,28 +1,18 @@
 // collideWith Function we can use for the game if it's 2D
 
-// Define keys
-var keys = [];
-keyPressed = function() {
-    keys[keyCode] = true;
-};
-keyReleased = function() {
-    delete keys[keyCode];
-};
-
 // Use camera method
 var e = 0,
     f = 0;
     
-var Block = function(x, y, w, h) {
-    this.x = x;
-    this.y = y;
-    this.width = w;
-    this.height = h;
-
-    this.draw = function() {
+var Block = {
+    x: null,
+    y: null,
+    width: null,
+    height: null,
+    draw: function() {
         fill(130);
         rect(this.x, this.y, this.width, this.height);
-    };
+    }
 };
 // Define collideWith Function
 var collideWith = function(object1, object2) {
@@ -35,14 +25,13 @@ var collideWith = function(object1, object2) {
 var blocks = [new Block(e+200, f+175, 40, 40), new Block(e+300, f+200, 40, 40)];
 
 // Define Player
-var Player = function(x, y, w, h) {
-    this.x = x;
-    this.y = y;
-    this.width = w;
-    this.height = h;
-    this.speed = 2.5;
-
-    this.update = function() {
+var Player {
+    x: null,
+    y: null,
+    width: null,
+    height: null,
+    speed: 2.5,
+    update: function() {
         if (keys[RIGHT]) {
             this.x += this.speed;
         }
@@ -50,8 +39,8 @@ var Player = function(x, y, w, h) {
             this.x -= this.speed;
         }
 
-        for (var each in blocks) {
-            if (collideWith(this, blocks[each])) {
+        for (var i = 0; i < blocks.length; i++) {
+            if (collideWith(this, blocks[i])) {
                 if (keys[RIGHT]) {
                     this.x -= this.speed;
                 }
@@ -80,12 +69,11 @@ var Player = function(x, y, w, h) {
                 break;
             }
         }
-    };
-
-    this.draw = function() {
+    },
+    draw: function() {
         fill(255, 0, 0);
         rect(this.x, this.y, this.width, this.height);
-    };
+    }
 };
 
 // Create a new Instance of the Player Object
@@ -97,7 +85,7 @@ var objectX = 170;
 var objectY = 200;
 var pointAt;
 
-var player = new Player(x+-15, y+-20, 40, 40);
+var player = new Player(x + -15, y + -20, 40, 40);
 noStroke();
     
 var speed = 5;
@@ -112,8 +100,8 @@ draw = function() {
     player.update();
     player.draw();
 
-    for (var each in blocks) {
-        blocks[each].draw();
+    for (i = 0; i < blocks; i++) {
+        blocks[i].draw();
     }
     
     if (keys[LEFT]) {
@@ -140,12 +128,5 @@ draw = function() {
         f += 0;
     }
     
-    if(speed >= 20){
-        textSize(50);
-        fill(255, 255, 255);
-        text("You're too fast!", 201, 170);
-        
-        textSize(20);
-        text("Slow down...", 201, 204);
-    }
+    constrain(speed, 0, 20);
 };
