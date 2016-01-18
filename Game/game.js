@@ -56,7 +56,7 @@ _  ____/_  /   / /_/ / /_/ / / /_/ // /__ / /_ _  / / /_/ /  / / /(__  )
  */
 
 /** --- CONSTANTS --- **/
-var NUMBER_OF_ARCS = 13;
+var NUMBER_OF_ARCS = 37;
 
 /** --- DYNAMIC GLOBAL VARIABLES --- **/
 var currScreen = "loading";
@@ -315,7 +315,7 @@ var Loading = {
         strokeWeight(3);
         // Draws the Shadow
         for(var i = 1; i < NUMBER_OF_ARCS; i++) {
-            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 40 + -i * 30, (NUMBER_OF_ARCS + 1) * 40 + -i * 30, frameCount / 2 * i % 360 - 180, frameCount / 2 * i % 360);
+            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 40 + -i * 35, (NUMBER_OF_ARCS + 1) * 40 + -i * 35, frameCount / 2 * i % 360 - 180, frameCount / 2 * i % 360);
         }
         strokeWeight(3);
         // Controls Color
@@ -323,7 +323,7 @@ var Loading = {
         noFill();
         // Draws the main arcs
         for(var i = 1; i < NUMBER_OF_ARCS; i++) {
-            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 40 + -i * 30, (NUMBER_OF_ARCS + 1) * 40 + -i * 30, frameCount / 2 * i % 360, frameCount / 2 * i % 360 + 180);
+            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 40 + -i * 35, (NUMBER_OF_ARCS + 1) * 40 + -i * 35, frameCount / 2 * i % 360, frameCount / 2 * i % 360 + 180);
         }
         colorMode(RGB);
         var counter2 = 0;
