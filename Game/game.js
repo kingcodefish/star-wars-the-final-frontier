@@ -315,7 +315,7 @@ var Loading = {
         strokeWeight(3);
         // Draws the Shadow
         for(var i = 1; i < NUMBER_OF_ARCS; i++) {
-            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 40 + -i * 35, (NUMBER_OF_ARCS + 1) * 40 + -i * 35, frameCount / 2 * i % 360 - 180, frameCount / 2 * i % 360);
+            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 20 + -i * 15, (NUMBER_OF_ARCS + 1) * 20 + -i * 15, frameCount / 2 * i % 360 - 180, frameCount / 2 * i % 360);
         }
         strokeWeight(3);
         // Controls Color
@@ -323,7 +323,7 @@ var Loading = {
         noFill();
         // Draws the main arcs
         for(var i = 1; i < NUMBER_OF_ARCS; i++) {
-            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 40 + -i * 35, (NUMBER_OF_ARCS + 1) * 40 + -i * 35, frameCount / 2 * i % 360, frameCount / 2 * i % 360 + 180);
+            arc(width / 2, height / 2, (NUMBER_OF_ARCS + 1) * 20 + -i * 15, (NUMBER_OF_ARCS + 1) * 20 + -i * 15, frameCount / 2 * i % 360 - 180, frameCount / 2 * i % 360);
         }
         colorMode(RGB);
         var counter2 = 0;
