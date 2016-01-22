@@ -26,7 +26,7 @@ var imAFunction = function(x, y) {
 ```
 
 ## Objects
-Objects should be declared in non-prototype form in most cases. This allows us to truncate it and be easily visible as what it belongs to. If you're extending another object, the prototype form may be needed. Objects follow the same style guide as functions, aside from the fact that they should **always** begin with a capital letter.
+Objects should be declared in non-prototype form in most cases. This allows us to truncate it and be easily visible as what it belongs to. If you're extending another object, the prototype form will be needed. e.g., Entity->Player. Objects follow the same style guide as functions, aside from the fact that they should **always** begin with a capital letter, unless of course you're using it for non-function-like purposes.
 
 ## Default Functions
 Default KA functions should not have `var` at the beginning, as this is suggested by the courses. It also makes it easy to differentiate.
