@@ -7,6 +7,12 @@
 - Rendering
 - Storyline
 - Core Programming
+
+#### Blaze
+- Gameplay
+- Graphics
+- Storyline
+- Core Programming
  
 #### AlexT
 - Gameplay
