@@ -63,3 +63,7 @@ switch(true) {
 		break;
 }
 ```
+
+## Invoking
+When invoking functions and other predefined things, always separate arguments with a comma and space, like so:
+`functionDoesSomething(50, 80, "foo");`
