@@ -26,30 +26,36 @@ _  ____/_  /   / /_/ / /_/ / / /_/ // /__ / /_ _  / / /_/ /  / / /(__  )
 
 /** --- CONSTANTS --- **/
 var NUMBER_OF_ARCS = 37;
+var MENU_STAR_SIZE = 2;
+var MENU_LOGO_INCREASE = 8;
 
 /** --- DYNAMIC GLOBAL VARIABLES --- **/
 var currScreen = "loading";
+var transitionFill = 0;
+var transition = null;
+var transitionFirstTime = false;
 var keys = [];
 var mouseOverButton = "";
 var cacheImageNo = 0;
+var menuStarsPos = [];
+for(var i = 0; i < 300; i++) {
+    menuStarsPos.push({x: random(0, width), y: random(0, height)});
+}
+var menuLogoSize = 0;
 
 /** --- UTILITY FUNCTIONS --- **/
-var button = function(x, y, w, h, r, t, ts, tf, htf, f, hf, s, sw, hs, hsw) {
-    if(abs(x - mouseX) <= w / 2 && abs(y - mouseY) <= h / 2) {
+var button = function(x, y, w, h, r, t, ts, tf, htf, f, hf) {
+    if(dist(x, y, mouseX, mouseY) < w / 2) {
         if(mouseIsPressed) {
             mouseOverButton = t;
         }
         fill(hf);
-        stroke(hs);
-        strokeWeight(hsw);
     } else {
         fill(f);
-        stroke(s);
-        strokeWeight(sw);
     }
-    rectMode(CENTER);
-    rect(x, y, w, h, r);
-    if(abs(x - mouseX) <= w / 2 && abs(y - mouseY) <= h / 2) {
+    noStroke();
+    ellipse(x, y, w, h);
+    if(dist(x, y, mouseX, mouseY) < w / 2) {
         fill(htf);
     } else {
         fill(tf);
@@ -57,6 +63,16 @@ var button = function(x, y, w, h, r, t, ts, tf, htf, f, hf, s, sw, hs, hsw) {
     textAlign(CENTER, CENTER);
     textSize(ts);
     text(t, x, y);
+};
+var cacheImage = function(imgFunction, w, h) {
+    var c = createGraphics(w, h, JAVA2D);
+    if(!c) {
+        return;
+    }
+    
+    c = imgFunction(c);
+    
+    return(c.get());
 };
 
 /** --- RENDERING & INPUT --- **/
@@ -252,30 +268,18 @@ var Cache = {
     Sound: {
     }
 };
-var cacheImage = function(imgFunction, w, h) {
-    var c = createGraphics(w, h, JAVA2D);
-    if(!c) {
-        return;
-    }
-    
-    c = imgFunction(c);
-    
-    return(c.get());
-};
 var Loading = {
     draw: function() {
         background(0, 0, 0);
         
         var counter = 0;
-        if(frameCount % 5 === 0) {
-            for(var i in PreCache) {
-                if(counter === cacheImageNo) {
-                    Cache.Bitmap[i] = cacheImage(PreCache[i], width, height);
-                    cacheImageNo++;
-                    break;
-                }
-                counter++;
+        for(var i in PreCache) {
+            if(counter === cacheImageNo) {
+                Cache.Bitmap[i] = cacheImage(PreCache[i], width, height);
+                cacheImageNo++;
+                break;
             }
+            counter++;
         }
         strokeCap(SQUARE);
         colorMode(HSB);
@@ -301,6 +305,7 @@ var Loading = {
                 image(Cache.Bitmap[i], width / 2, 300, 120, 120);
                 if(counter2 === Object.keys(PreCache).length-1) {
                     currScreen = "menu";
+                    transitionFill -= 5;
                 }
                 break;
             }
@@ -311,16 +316,46 @@ var Loading = {
 var Menu = {
     draw: function() {
         background(0, 0, 0);
-        image(Cache.Bitmap.starWarsLogo, width / 2, height / 2);
+        fill(255, 255, 255);
+        for(var i = 0; i < menuStarsPos.length; i++) {
+            ellipse(menuStarsPos[i].x, menuStarsPos[i].y, MENU_STAR_SIZE, MENU_STAR_SIZE);
+        }
+        image(Cache.Bitmap.starWarsLogo, width / 2, height / 2, menuLogoSize, menuLogoSize);
         fill(255, 232, 31);
         textSize(40);
         text("The Final Frontier", 300, 220);
-        button(300, 300, 200, 53, 10, "Play", 24, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0), color(0, 0, 0, 100), 2, color(0, 0, 0, 100), 2);
-        button(300, 360, 200, 53, 10, "options", 24, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0), color(0, 0, 0, 100), 2, color(0, 0, 0, 100), 2);
-        button(300, 420, 200, 53, 10, "Credits", 24, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0), color(0, 0, 0, 100), 2, color(0, 0, 0, 100), 2);
+        button(300, 350, 125, 125, 10, "Play", 24, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0));
+        button(180, 350, 80, 80, 10, "options", 15, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0));
+        button(420, 350, 80, 80, 10, "Credits", 15, color(0, 0, 0), color(255, 242, 0), color(255, 255, 255), color(0, 0, 0));
+        if(menuLogoSize < width) {
+            menuLogoSize += MENU_LOGO_INCREASE;
+        }
+    }
+};
+var Play = {
+    draw: function() {
+        background(74, 61, 42);
     }
 };
 var GameHandler = {
+    transitionScene: function(scene) {
+        if(transitionFill < 255 && transition) {
+            transitionFill += 2;
+        } else if(transitionFill > -1 && transition === false) {
+            transitionFill -= 2;
+        } else if(transitionFill >= 255 && transition) {
+            transition = false;
+        } else if(transitionFill <= -3 && transition === false) {
+            transition = null;
+        } else if(transition === null && transitionFill < -1) {
+            transition = true;
+        }
+        if(!transition && transitionFill > -3) {
+            scene.draw();
+        }
+        fill(0, 0, 0, transitionFill);
+        rect(width / 2, height / 2, width, height);
+    },
     update: function() {
         // Default Styling
         noStroke();
@@ -335,9 +370,18 @@ var GameHandler = {
                 Loading.draw();
                 break;
             case "menu":
-                Menu.draw();
+                this.transitionScene(Menu);
+                break;
+            case "play":
+                this.transitionScene(Play);
                 break;
         }
+    }
+};
+mouseReleased = function() {
+    if(mouseOverButton !== "") {
+        currScreen = mouseOverButton.toLowerCase();
+        transitionFill -= 5;
     }
 };
 draw = function() {
