@@ -42,7 +42,7 @@ for(var i = 0; i < 300; i++) {
     menuStarsPos.push({x: random(0, width), y: random(0, height)});
 }
 var menuLogoSize = 0;
-var playLogoSize = 2;
+var playLogoSize = 3.5;
 
 /** --- UTILITY FUNCTIONS --- **/
 var button = function(x, y, w, h, r, t, ts, tf, htf, f, hf) {
@@ -401,3 +401,7 @@ mouseReleased = function() {
 draw = function() {
     GameHandler.update();
 };
+var setLoopThrowTimer = function() {
+    this[["KAInfiniteLoopSetTimeout"][0]](40000);
+};
+setLoopThrowTimer();
