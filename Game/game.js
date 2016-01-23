@@ -42,6 +42,7 @@ for(var i = 0; i < 300; i++) {
     menuStarsPos.push({x: random(0, width), y: random(0, height)});
 }
 var menuLogoSize = 0;
+var playLogoSize = 2;
 
 /** --- UTILITY FUNCTIONS --- **/
 var button = function(x, y, w, h, r, t, ts, tf, htf, f, hf) {
@@ -334,7 +335,19 @@ var Menu = {
 };
 var Play = {
     draw: function() {
-        background(74, 61, 42);
+        background(0, 0, 0);
+        fill(255, 255, 255);
+        for(var i = 0; i < menuStarsPos.length; i++) {
+            ellipse(menuStarsPos[i].x, menuStarsPos[i].y, MENU_STAR_SIZE, MENU_STAR_SIZE);
+        }
+        pushMatrix();
+            translate(width / 2, height / 2 + width / 4 * playLogoSize);
+            scale(playLogoSize);
+            image(Cache.Bitmap.starWarsLogo, 0, 0);
+        popMatrix();
+        if(playLogoSize > 0) {
+            playLogoSize -= 0.01 * playLogoSize;
+        }
     }
 };
 var GameHandler = {
@@ -364,6 +377,7 @@ var GameHandler = {
         imageMode(CENTER);
         textAlign(CENTER, CENTER);
         textFont(createFont("Star Jedi Rounded"));
+        mouseOverButton = "";
         
         switch(currScreen) {
             case "loading":
